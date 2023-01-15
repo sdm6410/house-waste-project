@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SplashActivity">
+
+    <com.example.cameraproject.Util.View.MyViewPager
+        android:id="@+id/main_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/view2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#11000000"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+
+        <LinearLayout
+            android:id="@+id/main_home_holder"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/main_home_image"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:src="@drawable/icon_home"/>
+
+
+            <TextView
+                android:id="@+id/main_home_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="홈"
+                android:textSize="10dp"
+                android:textColor="#CCCCCC" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/main_apply_holder"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/main_apply_image"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:src="@drawable/icon_community"/>
+
+
+            <TextView
+                android:id="@+id/main_apply_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="신청내역"
+                android:textSize="10dp"
+                android:textColor="#CCCCCC" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/main_detail_holder"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/main_detail_image"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:src="@drawable/icon_service"/>
+
+
+            <TextView
+                android:id="@+id/main_detail_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="더 보기"
+                android:textSize="10dp"
+                android:textColor="#CCCCCC" />
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

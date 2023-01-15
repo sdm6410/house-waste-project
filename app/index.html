@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>Welcome to Firebase Hosting</title>
+</head>
+<body>
+<script src="https://ssl.daumcdn.net/dmaps/map_js_init/postcode.v2.js?autoload=false"></script>
+<script>
+    var element_layer = document.getElementById('layer');
+    daum.postcode.load(function(){
+        new daum.Postcode({
+            oncomplete:function(data){
+            }
+            }).embed();
+    });
+</script>
+</body>
+</iframe>
+</html>
